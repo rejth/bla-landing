@@ -3,8 +3,12 @@
   font-feature-settings: 'locl' 0;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .container {
-  max-width: 1140px;
+  max-width: 1350px;
   margin: auto;
 }
 
@@ -12,10 +16,7 @@ img {
   max-width: 100%;
 }
 
-p {
-  margin: 0;
-}
-
+p,
 h1,
 h2,
 h3 {
