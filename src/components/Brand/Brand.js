@@ -12,7 +12,7 @@ const Brand = () => (
     <a href="#portfolio" className="brand__link">
       <img
         className="brand__arrow"
-        src="img/arrow-down.png"
+        src="img/brand/arrow-down.png"
         alt="Image of arrow"
       ></img>
     </a>
