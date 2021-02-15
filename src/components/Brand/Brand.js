@@ -4,10 +4,10 @@ import './Brand.scss';
 const Brand = () => (
   <section className="brand">
     <h1 className="brand__title">We Build Brand</h1>
-    <p className="brand__subtitle">
+    <div className="brand__subtitle">
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    </p>
+    </div>
     <button className="brand__button">Learn more</button>
     <a href="#portfolio" className="brand__link">
       <img
