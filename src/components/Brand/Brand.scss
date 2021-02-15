@@ -1,3 +1,6 @@
+$secondary-font-color: #ffffff;
+$button-color: #1bbc9b;
+
 .brand {
   margin: auto;
   padding: 78px 0 82px 0;
@@ -6,5 +9,45 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: center;
   overflow: hidden;
+  &__title {
+    font-size: 55px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    color: $secondary-font-color;
+  }
+  &__subtitle {
+    margin-top: 41px;
+    max-width: 574px;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    color: $secondary-font-color;
+  }
+  &__button {
+    margin-top: 46px;
+    padding: 15px;
+    min-width: 122px;
+    min-height: 37px;
+    font-size: 13px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    background-color: $button-color;
+    color: $secondary-font-color;
+  }
+  &__link {
+    display: block;
+    margin-top: 42px;
+  }
 }

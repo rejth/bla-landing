@@ -27,12 +27,16 @@ $primary-font-color: #444444;
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
+    letter-spacing: normal;
+    line-height: normal;
     color: $primary-font-color;
   }
   &__subtitle {
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
     color: $primary-font-color;
   }
   &__list {
@@ -53,6 +57,8 @@ $primary-font-color: #444444;
     text-align: left;
     text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: normal;
+    line-height: normal;
     color: $primary-font-color;
   }
 }
