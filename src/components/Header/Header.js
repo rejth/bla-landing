@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './Header.scss';
 
 const Header = () => (
-  <header className="navbar">
+  <header className="navbar" id="header">
     <div className="container">
       <div className="navbar__wrapper">
         <a href="#" className="navbar__logo logo">
@@ -12,8 +12,10 @@ const Header = () => (
             src="img/b-logo.png"
             alt="Image of logo"
           />
-          <span className="navbar__title">BLA BLA</span>
-          <span className="navbar__subtitle">One Page Flat Template</span>
+          <div className="navbar__info">
+            <span className="navbar__title">BLA BLA</span>
+            <span className="navbar__subtitle">One Page Flat Template</span>
+          </div>
         </a>
         <ul className="navbar__list">
           <NavbarLink target={'header'} text={'HOME'} />

@@ -1,0 +1,16 @@
+$secondary-font-color: #ffffff;
+$background: #2d3e50;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $background;
+  &__info {
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: $secondary-font-color;
+  }
+}

@@ -1,10 +1,15 @@
-import './App.css';
+import React from 'react';
+import Header from '../Header';
+import Brand from '../Brand';
+import Footer from '../Footer';
+import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
-}
+const App = () => (
+  <React.Fragment>
+    <Header />
+    <Brand />
+    <Footer />
+  </React.Fragment>
+);
 
 export default App;
