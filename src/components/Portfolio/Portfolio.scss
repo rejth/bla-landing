@@ -52,7 +52,6 @@ $primary-font-color: #444444;
     }
   }
   &__button + &__button {
-    margin-top: 34px;
     margin-left: 15px;
   }
   &__items-wrapper {
@@ -68,6 +67,10 @@ $primary-font-color: #444444;
     height: 180px;
     overflow: hidden;
     background-color: $light;
+  }
+  &__item + &__item {
+    margin-top: 34px;
+    margin-left: 58px;
   }
   &__image {
     width: 100%;
