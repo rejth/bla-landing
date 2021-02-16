@@ -45,7 +45,7 @@ const About = () => (
 const UserCard = ({ image, name, profession, description }) => (
   <div className="about__card card">
     <div
-      style={{ backgroundImage: `url(/img/about/${image})` }}
+      style={{ backgroundImage: `url(img/about/${image})` }}
       className="about__image"
     ></div>
     <div className="about__info">
