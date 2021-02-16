@@ -2,9 +2,9 @@ import React from 'react';
 import './Portfolio.scss';
 
 const Portfolio = () => {
-  const renderItems = () => {
+  const renderItems = count => {
     const items = [];
-    for (let i = 1; i < 9; i++) {
+    for (let i = 1; i < count + 1; i++) {
       items.push(
         <div className="portfolio__item">
           <img
@@ -17,6 +17,8 @@ const Portfolio = () => {
     }
     return items;
   };
+
+  const portfolioItems = renderItems(8);
 
   return (
     <section className="portfolio">
@@ -31,7 +33,7 @@ const Portfolio = () => {
           <button className="portfolio__button btn-3">GRAPHIC DESIGN</button>
           <button className="portfolio__button btn-4">FLAT DESIGN</button>
         </div>
-        <div className="portfolio__items-wrapper">{renderItems}</div>
+        <div className="portfolio__items-wrapper">{portfolioItems}</div>
       </div>
     </section>
   );
