@@ -26,10 +26,10 @@ const Portfolio = () => {
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
         </p>
         <div className="portfolio__btn-wrapper">
-          <button className="portfolio__button btn-1">All</button>;
-          <button className="portfolio__button btn-2">WEB DESIGN</button>;
-          <button className="portfolio__button btn-3">GRAPHIC DESIGN</button>;
-          <button className="portfolio__button btn-4">FLAT DESIGN</button>;
+          <button className="portfolio__button btn-1">All</button>
+          <button className="portfolio__button btn-2">WEB DESIGN</button>
+          <button className="portfolio__button btn-3">GRAPHIC DESIGN</button>
+          <button className="portfolio__button btn-4">FLAT DESIGN</button>
         </div>
         <div className="portfolio__items-wrapper">{renderItems}</div>
       </div>

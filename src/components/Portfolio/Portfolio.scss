@@ -1,12 +1,10 @@
 $light: #ffffff;
-$about-background: #1bbc9b;
+$button-color: #1bbc9b;
 $primary-font-color: #444444;
 
 .portfolio {
-  padding-top: 57px;
-  padding-bottom: 74px;
-  min-height: 646px;
-  background-color: $about-background;
+  padding: 54px 65px 61px 65px;
+  background-color: $light;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -18,15 +16,74 @@ $primary-font-color: #444444;
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
-    color: $light;
+    color: $primary-font-color;
   }
   &__subtitle {
-    margin-top: 18px;
-    font-size: 14px;
+    margin-top: 17px;
+    font-size: 16px;
     font-weight: 400;
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
+    color: $primary-font-color;
+  }
+  &__btn-wrapper {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__button {
+    padding: 10px;
+    min-height: 37px;
+    font-size: 13px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    background-color: $button-color;
     color: $light;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__button + &__button {
+    margin-left: 15px;
+  }
+  &__btn-1 {
+    min-width: 43px;
+  }
+  &__btn-2 {
+    min-width: 114px;
+  }
+  &__btn-3 {
+    min-width: 144px;
+  }
+  &__btn-4 {
+    min-width: 115px;
+  }
+  &__items-wrapper {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 170px;
+    height: 180px;
+    overflow: hidden;
+    background-color: $light;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
