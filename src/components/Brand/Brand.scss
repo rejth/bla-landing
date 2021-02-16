@@ -47,6 +47,9 @@ $button-color: #1bbc9b;
     cursor: pointer;
     background-color: $button-color;
     color: $secondary-font-color;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   &__link {
     display: block;
