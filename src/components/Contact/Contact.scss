@@ -1,0 +1,115 @@
+$light: #ffffff;
+$contact-background: #ecf0f1;
+$button-color: #1bbc9b;
+$primary-font-color: #444444;
+$form-font-color: #999999;
+$message-border-color: #bec3c7;
+
+.contact {
+  padding: 52px 44px 60px 48px;
+  background-color: $contact-background;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    font-size: 28px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    color: $primary-font-color;
+  }
+  &__subtitle {
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    color: $primary-font-color;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    margin-top: 43px;
+    align-items: center;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__input-wrapper {
+    display: flex;
+    flex-basis: 100%;
+    margin-top: 7px;
+  }
+  &__input-group {
+    flex-basis: 50%;
+  }
+  &__input-group + &__input-group {
+    margin-left: 20px;
+  }
+  &__input {
+    padding: 19px 14px;
+    width: 100%;
+    height: 47px;
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: normal;
+    line-height: normal;
+    border: 2px solid $message-border-color;
+    color: $form-font-color;
+    background-color: $light;
+  }
+  &__message {
+    margin-top: 22px;
+    padding: 18px 23px;
+    height: 153px;
+    flex-basis: 100%;
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: normal;
+    line-height: normal;
+    resize: none;
+    border: 2px solid $message-border-color;
+    color: $form-font-color;
+    background-color: $light;
+  }
+  &__button {
+    margin-top: 23px;
+    padding: 15px;
+    min-width: 114px;
+    min-height: 37px;
+    font-size: 13px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    background-color: $button-color;
+    color: $secondary-font-color;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__location {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    color: $primary-font-color;
+  }
+}
+
+#map {
+  height: 265px;
+}
