@@ -3,11 +3,16 @@ $about-background: #1bbc9b;
 $primary-font-color: #444444;
 
 .about {
-  padding-top: 57px 74px;
+  padding-top: 57px;
   padding-bottom: 74px;
   min-height: 646px;
   background-color: $about-background;
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,13 +39,15 @@ $primary-font-color: #444444;
     max-width: 781px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
   }
   &__card {
     width: 220px;
     min-height: 418px;
     overflow: hidden;
+  }
+  &__card + &__card {
+    margin-left: 61px;
   }
   &__image {
     width: 100%;
