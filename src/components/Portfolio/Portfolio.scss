@@ -56,21 +56,17 @@ $primary-font-color: #444444;
   }
   &__items-wrapper {
     margin-top: 45px;
-    max-width: 892px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 5vw);
+    column-gap: 68px;
+    row-gap: 34px;
   }
   &__item {
     width: 170px;
     height: 180px;
     overflow: hidden;
     background-color: $light;
-  }
-  &__item + &__item {
-    margin-top: 34px;
-    margin-left: 58px;
   }
   &__image {
     width: 100%;
