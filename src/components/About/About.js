@@ -46,12 +46,12 @@ const UserCard = ({ image, name, profession, description }) => (
   <div className="about__card card">
     <div
       style={{ backgroundImage: `url(/img/about/${image})` }}
-      className="card__image"
+      className="about__image"
     ></div>
     <div className="about__info">
-      <span className="card__user">{name}</span>
-      <span className="card__profession">{profession}</span>
-      <p className="card__description">{description}</p>
+      <span className="about__user">{name}</span>
+      <span className="about__profession">{profession}</span>
+      <p className="about__description">{description}</p>
     </div>
   </div>
 );
