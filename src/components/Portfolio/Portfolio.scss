@@ -52,22 +52,12 @@ $primary-font-color: #444444;
     }
   }
   &__button + &__button {
+    margin-top: 34px;
     margin-left: 15px;
-  }
-  &__btn-1 {
-    min-width: 43px;
-  }
-  &__btn-2 {
-    min-width: 114px;
-  }
-  &__btn-3 {
-    min-width: 144px;
-  }
-  &__btn-4 {
-    min-width: 115px;
   }
   &__items-wrapper {
     margin-top: 45px;
+    max-width: 892px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,4 +76,17 @@ $primary-font-color: #444444;
     background-size: cover;
     background-position: center;
   }
+}
+
+.btn-1 {
+  min-width: 43px;
+}
+.btn-2 {
+  min-width: 114px;
+}
+.btn-3 {
+  min-width: 144px;
+}
+.btn-4 {
+  min-width: 115px;
 }
