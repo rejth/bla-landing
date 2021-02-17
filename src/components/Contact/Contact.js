@@ -41,7 +41,7 @@ const Contact = () => (
           <span className="contact__location">
             Bla Bla Company 125009 Moscow, Red Square 1
           </span>
-          <div id="map"></div>
+          <div id="map" style="width: 100%; height: 265px"></div>
         </div>
       </div>
     </div>
