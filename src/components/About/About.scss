@@ -37,9 +37,9 @@ $primary-font-color: #444444;
   &__cards-wrapper {
     margin-top: 43px;
     max-width: 781px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 61px;
   }
   &__card {
     width: 220px;
@@ -47,15 +47,16 @@ $primary-font-color: #444444;
     overflow: hidden;
     background-color: $light;
   }
-  &__card + &__card {
-    margin-left: 61px;
-  }
+  // &__card + &__card {
+  //   margin-left: 61px;
+  // }
   &__image {
     width: 100%;
     height: 228px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    object-fit: cover;
     cursor: pointer;
   }
   &__user {
@@ -90,14 +91,12 @@ $primary-font-color: #444444;
 @media (max-width: 880px) {
   .about {
     &__cards-wrapper {
-      max-width: 700px;
-      flex-wrap: wrap;
-    }
-    &__card {
-      width: 300px;
-    }
-    &__card + &__card {
-      margin-left: 50px;
+      max-width: 550px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
     }
   }
 }
