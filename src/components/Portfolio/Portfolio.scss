@@ -107,5 +107,8 @@ $primary-font-color: #444444;
       column-gap: 80px;
       row-gap: 34px;
     }
+    &__button {
+      padding: 0;
+    }
   }
 }

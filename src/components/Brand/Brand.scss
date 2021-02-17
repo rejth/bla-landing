@@ -56,3 +56,9 @@ $button-color: #1bbc9b;
     margin-top: 42px;
   }
 }
+
+@media (max-width: 615px) {
+  .brand {
+    padding: 60px 30px;
+  }
+}
