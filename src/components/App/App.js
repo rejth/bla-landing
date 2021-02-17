@@ -5,7 +5,6 @@ import Portfolio from '../Portfolio';
 import About from '../About';
 import Contact from '../Contact';
 import Footer from '../Footer';
-import Shevron from '../Shevron';
 import './App.scss';
 
 const App = () => (
@@ -16,7 +15,6 @@ const App = () => (
     <About />
     <Contact />
     <Footer />
-    <Shevron />
   </React.Fragment>
 );
 

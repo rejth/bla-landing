@@ -18,7 +18,7 @@ const Shevron = () => {
       <img
         className="up__arrow"
         alt="Image of up-button"
-        src="img/shevron/shevron.svg"
+        src="img/shevron/shevron.png"
       ></img>
     </a>
   );
