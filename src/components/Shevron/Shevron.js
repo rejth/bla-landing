@@ -9,7 +9,7 @@ const Shevron = () => {
 
   document.addEventListener('click', e => {
     e.preventDefault();
-    if (e.target.matches('.up')) {
+    if (e.target.closest('.up')) {
       toggleUpScroll();
     }
   });
