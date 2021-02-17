@@ -21,7 +21,7 @@ const Portfolio = () => {
   const portfolioItems = renderItems(8);
 
   return (
-    <section className="portfolio">
+    <section className="portfolio" id="portfolio">
       <div className="portfolio__wrapper">
         <h2 className="portfolio__title">Portfolio</h2>
         <p className="portfolio__subtitle">

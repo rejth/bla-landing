@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './About.scss';
 
 const About = () => (
-  <section className="about">
+  <section className="about" id="about">
     <div className="about__wrapper">
       <h2 className="about__title">About Us</h2>
       <p className="about__subtitle">
