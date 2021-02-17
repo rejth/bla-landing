@@ -12,7 +12,6 @@ function getYaMap() {
     {
       center: [55.798682, 37.695816],
       zoom: 9,
-      controls: ['routePanelControl'],
     },
     {
       searchControlProvider: 'yandex#search',
