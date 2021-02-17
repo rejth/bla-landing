@@ -23,6 +23,7 @@ $primary-font-color: #444444;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
     letter-spacing: normal;
     line-height: normal;
     color: $primary-font-color;
@@ -109,6 +110,25 @@ $primary-font-color: #444444;
     }
     &__button {
       padding: 0;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .portfolio {
+    &__items-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 0;
+      row-gap: 34px;
+    }
+    &__btn-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 15px;
+      row-gap: 15px;
+    }
+    &__button + &__button {
+      margin-left: 0;
     }
   }
 }
