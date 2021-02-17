@@ -10,7 +10,7 @@ function getYaMap() {
   const myMap = new ymaps.Map(
       'map',
       {
-        center: [7.838252, 98.29922],
+        center: [55.798682, 37.695816],
         zoom: 9,
       },
       {
@@ -20,7 +20,7 @@ function getYaMap() {
     myPlacemark = new ymaps.Placemark(
       myMap.getCenter(),
       {
-        hintContent: 'Grand Hotel',
+        hintContent: 'Bla Bla Company 125009 Moscow, Red Square 1',
         balloonContent: 'The awesome place in the world!',
       },
       {
@@ -28,7 +28,7 @@ function getYaMap() {
         // Необходимо указать данный тип макета.
         iconLayout: 'default#image',
         // Своё изображение иконки метки.
-        iconImageHref: './img/myIcon.gif',
+        iconImageHref: '../img/myIcon.gif',
         // Размеры метки.
         iconImageSize: [30, 42],
         // Смещение левого верхнего угла иконки относительно
