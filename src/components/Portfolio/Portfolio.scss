@@ -89,3 +89,13 @@ $primary-font-color: #444444;
 .btn-4 {
   min-width: 115px;
 }
+
+@media (max-width: 950px) {
+  .portfolio {
+    &__items-wrapper {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 68px;
+      row-gap: 34px;
+    }
+  }
+}
