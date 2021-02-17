@@ -117,9 +117,8 @@ $primary-font-color: #444444;
 @media (max-width: 520px) {
   .portfolio {
     &__items-wrapper {
-      grid-template-columns: repeat(1, 1fr);
-      column-gap: 0;
-      row-gap: 34px;
+      column-gap: 30px;
+      row-gap: 30px;
     }
     &__btn-wrapper {
       display: grid;
@@ -129,6 +128,14 @@ $primary-font-color: #444444;
     }
     &__button + &__button {
       margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .portfolio {
+    &__items-wrapper {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }
