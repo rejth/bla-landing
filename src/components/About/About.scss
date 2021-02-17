@@ -94,16 +94,22 @@ $primary-font-color: #444444;
       grid-column-gap: 30px;
       grid-row-gap: 30px;
     }
+    &__card {
+      width: 260px;
+    }
   }
 }
 
 @media (max-width: 600px) {
   .about {
     &__cards-wrapper {
-      max-width: 220px;
+      max-width: 300px;
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(3, 1fr);
       grid-column-gap: 0;
+    }
+    &__card {
+      width: 300px;
     }
   }
 }
