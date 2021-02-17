@@ -12,32 +12,12 @@ function getYaMap() {
     {
       center: [55.798682, 37.695816],
       zoom: 9,
+      controls: ['routePanelControl'],
     },
     {
       searchControlProvider: 'yandex#search',
     }
   );
-
-  // Построение маршрута.
-  // По умолчанию строится автомобильный маршрут.
-  const multiRoute = new ymaps.multiRouter.MultiRoute(
-    {
-      // Точки маршрута. Точки могут быть заданы как координатами, так и адресом.
-      referencePoints: [
-        'Москва, метро Преображенская площадь',
-        'Москва, метро Сокольники',
-        'Колодезный переулок, 2А',
-      ],
-    },
-    {
-      // Автоматически устанавливать границы карты так,
-      // чтобы маршрут был виден целиком.
-      boundsAutoApply: true,
-    }
-  );
-
-  // Добавление маршрута на карту.
-  myMap.geoObjects.add(multiRoute);
 
   const myPlacemark = new ymaps.Placemark(
     myMap.getCenter(),
@@ -50,7 +30,7 @@ function getYaMap() {
       // Необходимо указать данный тип макета.
       iconLayout: 'default#image',
       // Своё изображение иконки метки.
-      iconImageHref: '../img/map/myIcon.svg',
+      iconImageHref: './img/map/myIcon.gif',
       // Размеры метки.
       iconImageSize: [30, 42],
       // Смещение левого верхнего угла иконки относительно
