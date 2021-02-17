@@ -50,7 +50,7 @@ function getYaMap() {
       // Необходимо указать данный тип макета.
       iconLayout: 'default#image',
       // Своё изображение иконки метки.
-      iconImageHref: '../img/map/myIcon.gif',
+      iconImageHref: '../img/map/myIcon.svg',
       // Размеры метки.
       iconImageSize: [30, 42],
       // Смещение левого верхнего угла иконки относительно
