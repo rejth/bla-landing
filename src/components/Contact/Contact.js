@@ -44,7 +44,7 @@ const Contact = () => (
           {/* <div id="map"></div> */}
           <div id="map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31620.497069234116!2d98.29300543230082!3d7.83607885304485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1600803917040!5m2!1sru!2sru"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.7823244714937!2d37.695927716055834!3d55.79701759604827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b535a128b3e401%3A0xbd8e99fb0dffe2fe!2z0JrQvtC70L7QtNC10LfQvdGL0Lkg0L_QtdGALiwgMtCwLCDQnNC-0YHQutCy0LAsIDEwNzA3Ng!5e0!3m2!1sru!2sru!4v1613601840966!5m2!1sru!2sru"
               width="100%"
               height="265"
               frameBorder="0"
