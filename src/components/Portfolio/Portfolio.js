@@ -6,7 +6,7 @@ const Portfolio = () => {
     const items = [];
     for (let i = 1; i < count + 1; i++) {
       items.push(
-        <div className="portfolio__item">
+        <div className="portfolio__item" key={i}>
           <img
             className="portfolio__image"
             src={`img/portfolio/img-${i}.png`}

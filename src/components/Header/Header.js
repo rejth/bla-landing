@@ -16,6 +16,7 @@ const Header = () => {
   document.addEventListener('click', e => {
     if (e.target.matches('.navbar__link')) {
       e.preventDefault();
+      console.log(e.target);
       toggleHeaderScroll(e.target);
     }
   });
