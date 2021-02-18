@@ -7,8 +7,8 @@ const Shevron = () => {
     scrollTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
-  document.addEventListener('click', e => {
-    // e.preventDefault();
+  document.body.addEventListener('click', e => {
+    e.preventDefault();
     if (e.target.closest('.up')) {
       toggleUpScroll();
     }

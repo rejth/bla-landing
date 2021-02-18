@@ -13,9 +13,9 @@ const Header = () => {
     window.scrollBy({ top: offsetPosition, behavior: 'smooth' });
   };
 
-  document.addEventListener('click', e => {
+  document.body.addEventListener('click', e => {
     if (e.target.matches('.navbar__link')) {
-      // e.preventDefault();
+      e.preventDefault();
       toggleHeaderScroll(e.target);
     }
   });
