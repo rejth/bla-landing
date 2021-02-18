@@ -7,17 +7,15 @@ const Shevron = () => {
     scrollTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
-  const footer = [...document.querySelector('.footer')];
-
-  footer.addEventListener('click', e => {
+  const handleClick = e => {
     e.preventDefault();
     if (e.target.closest('.up')) {
       toggleUpScroll();
     }
-  });
+  };
 
   return (
-    <a href="#header" className="up">
+    <a href="#header" className="up" onClick={handleClick}>
       <img
         className="up__arrow"
         alt="Image of up-button"

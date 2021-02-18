@@ -13,14 +13,12 @@ const Header = () => {
     window.scrollBy({ top: offsetPosition, behavior: 'smooth' });
   };
 
-  const header = [...document.querySelector('.navbar')];
-
-  header.addEventListener('click', e => {
+  const handleClick = e => {
     if (e.target.matches('.navbar__link')) {
       e.preventDefault();
       toggleHeaderScroll(e.target);
     }
-  });
+  };
 
   return (
     <header className="navbar" id="header">
@@ -38,10 +36,22 @@ const Header = () => {
             </div>
           </a>
           <ul className="navbar__list">
-            <NavbarLink target={'header'} text={'HOME'} />
-            <NavbarLink target={'portfolio'} text={'PORTFOLIO'} />
-            <NavbarLink target={'about'} text={'ABOUT'} />
-            <NavbarLink target={'contact'} text={'CONTACT'} />
+            <NavbarLink
+              target={'header'}
+              text={'HOME'}
+              onClick={this.handleClick}
+            />
+            <NavbarLink
+              target={'portfolio'}
+              text={'PORTFOLIO'}
+              onClick={handleClick}
+            />
+            <NavbarLink target={'about'} text={'ABOUT'} onClick={handleClick} />
+            <NavbarLink
+              target={'contact'}
+              text={'CONTACT'}
+              onClick={handleClick}
+            />
           </ul>
         </div>
       </div>
