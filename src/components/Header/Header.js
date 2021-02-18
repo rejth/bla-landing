@@ -36,11 +36,7 @@ const Header = () => {
             </div>
           </a>
           <ul className="navbar__list">
-            <NavbarLink
-              target={'header'}
-              text={'HOME'}
-              onClick={this.handleClick}
-            />
+            <NavbarLink target={'header'} text={'HOME'} onClick={handleClick} />
             <NavbarLink
               target={'portfolio'}
               text={'PORTFOLIO'}
