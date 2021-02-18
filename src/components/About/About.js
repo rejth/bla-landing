@@ -53,13 +53,13 @@ const UserCard = ({ image, name, profession, description }) => (
           <i className="fa fa-exclamation"></i>
         </a>
         <a href="https://twitter.com/" className="social-links__item">
-          <i className="fab fa-twitter"></i>
+          <i className="fa fa-twitter"></i>
         </a>
         <a href="https://www.google.ru/" className="social-links__item">
-          <i className="fab fa-google-plus-g"></i>
+          <i className="fa fa-google-plus-g"></i>
         </a>
         <a href="https://www.instagram.com/" className="social-links__item">
-          <i className="fas fa-globe"></i>
+          <i className="fa fa-globe"></i>
         </a>
       </div>
     </div>
