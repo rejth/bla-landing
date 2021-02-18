@@ -13,7 +13,7 @@ const Header = () => {
     window.scrollBy({ top: offsetPosition, behavior: 'smooth' });
   };
 
-  const header = document.querySelector('.navbar');
+  const header = [...document.querySelector('.navbar')];
 
   header.addEventListener('click', e => {
     if (e.target.matches('.navbar__link')) {

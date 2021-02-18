@@ -7,7 +7,7 @@ const Shevron = () => {
     scrollTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
-  const footer = document.querySelector('.footer');
+  const footer = [...document.querySelector('.footer')];
 
   footer.addEventListener('click', e => {
     e.preventDefault();
