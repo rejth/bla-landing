@@ -114,6 +114,9 @@ $message-border-color: #bec3c7;
     line-height: 24px;
     color: $primary-font-color;
   }
+  &__location {
+    margin-left: 5px;
+  }
 }
 
 #map {

@@ -39,7 +39,7 @@ const Contact = () => (
         </form>
         <div className="contact__map">
           <div className="contact__marker">
-            <i className="fa fa-twitter"></i>
+            <i className="fa fa-map-marker"></i>
             <span className="contact__location">
               Bla Bla Company 125009 Moscow, Red Square 1
             </span>
