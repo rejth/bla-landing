@@ -143,6 +143,10 @@ $primary-font-color: #444444;
 
 @media (max-width: 600px) {
   .about {
+    &__wrapper {
+      padding-right: 15px;
+      padding-right: 15px;
+    }
     &__cards-wrapper {
       max-width: 300px;
       grid-template-columns: repeat(1, 1fr);
