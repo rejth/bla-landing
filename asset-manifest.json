@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/bla-landing/static/css/main.6a4178b3.chunk.css",
-    "main.js": "/bla-landing/static/js/main.8670223d.chunk.js",
-    "main.js.map": "/bla-landing/static/js/main.8670223d.chunk.js.map",
+    "main.js": "/bla-landing/static/js/main.0d6d90c7.chunk.js",
+    "main.js.map": "/bla-landing/static/js/main.0d6d90c7.chunk.js.map",
     "runtime-main.js": "/bla-landing/static/js/runtime-main.346eb151.js",
     "runtime-main.js.map": "/bla-landing/static/js/runtime-main.346eb151.js.map",
-    "static/js/2.682cc729.chunk.js": "/bla-landing/static/js/2.682cc729.chunk.js",
-    "static/js/2.682cc729.chunk.js.map": "/bla-landing/static/js/2.682cc729.chunk.js.map",
+    "static/js/2.0e2372e8.chunk.js": "/bla-landing/static/js/2.0e2372e8.chunk.js",
+    "static/js/2.0e2372e8.chunk.js.map": "/bla-landing/static/js/2.0e2372e8.chunk.js.map",
     "index.html": "/bla-landing/index.html",
     "static/css/main.6a4178b3.chunk.css.map": "/bla-landing/static/css/main.6a4178b3.chunk.css.map",
-    "static/js/2.682cc729.chunk.js.LICENSE.txt": "/bla-landing/static/js/2.682cc729.chunk.js.LICENSE.txt",
+    "static/js/2.0e2372e8.chunk.js.LICENSE.txt": "/bla-landing/static/js/2.0e2372e8.chunk.js.LICENSE.txt",
     "static/media/Brand.scss": "/bla-landing/static/media/main-backgroud.f9186ed8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.346eb151.js",
-    "static/js/2.682cc729.chunk.js",
+    "static/js/2.0e2372e8.chunk.js",
     "static/css/main.6a4178b3.chunk.css",
-    "static/js/main.8670223d.chunk.js"
+    "static/js/main.0d6d90c7.chunk.js"
   ]
 }
