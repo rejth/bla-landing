@@ -49,6 +49,7 @@ $primary-font-color: #444444;
     background-color: $light;
   }
   &__image {
+    position: relative;
     width: 100%;
     height: 228px;
     background-repeat: no-repeat;
@@ -82,6 +83,17 @@ $primary-font-color: #444444;
     letter-spacing: normal;
     line-height: 20px;
     color: $primary-font-color;
+  }
+  &__social-links {
+    position: absolute;
+    top: 94px;
+    bottom: 86px;
+    right: 20px;
+    left: 20px;
+    width: 180px;
+    height: 48px;
+    background-color: $about-background;
+    opacity: 0.8;
   }
 }
 

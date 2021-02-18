@@ -47,7 +47,28 @@ const UserCard = ({ image, name, profession, description }) => (
     <div
       style={{ backgroundImage: `url(img/about/${image})` }}
       className="about__image"
-    ></div>
+    >
+      <div className="about__social-links social-links">
+        <a href="https://www.facebook.com/" className="social-links__item">
+          <img
+            className="social-links__image"
+            src="img/about/facebook.svg"
+          ></img>
+        </a>
+        <a href="https://twitter.com/" className="social-links__item">
+          <img
+            className="social-links__image"
+            src="img/about/twitter.svg"
+          ></img>
+        </a>
+        <a href="https://www.google.ru/" className="social-links__item">
+          <img className="social-links__image" src="img/about/google.svg"></img>
+        </a>
+        <a href="https://www.instagram.com/" className="social-links__item">
+          <img className="social-links__image" src="img/about/globus.svg"></img>
+        </a>
+      </div>
+    </div>
     <div className="about__info">
       <span className="about__user">{name}</span>
       <span className="about__profession">{profession}</span>
