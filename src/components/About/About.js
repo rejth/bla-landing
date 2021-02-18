@@ -44,23 +44,23 @@ const About = () => (
 
 class UserCard extends Component {
   state = {
-    display: 'none',
+    mouseOver: false,
   };
 
   mouseEnter = e => {
     e.preventDefault();
-    if (this.state.display === 'none') {
+    if (!this.state.display) {
       this.setState({
-        display: 'block',
+        mouseOver: true,
       });
     }
   };
 
   mouseLeave = e => {
     e.preventDefault();
-    if (this.state.display === 'block') {
+    if (this.state.display) {
       this.setState({
-        display: 'none',
+        mouseOver: false,
       });
     }
   };
@@ -77,7 +77,7 @@ class UserCard extends Component {
         >
           <div
             className="about__social-links social-links"
-            style={{ display: this.state.display }}
+            style={{ display: this.state.mouseOver ? 'flex' : 'none' }}
           >
             <a
               href="https://www.facebook.com/"
