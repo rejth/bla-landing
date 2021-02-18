@@ -49,7 +49,7 @@ class UserCard extends Component {
 
   mouseEnter = e => {
     e.preventDefault();
-    if (!this.state.display) {
+    if (!this.state.mouseOver) {
       this.setState({
         mouseOver: true,
       });
@@ -58,7 +58,7 @@ class UserCard extends Component {
 
   mouseLeave = e => {
     e.preventDefault();
-    if (this.state.display) {
+    if (this.state.mouseOver) {
       this.setState({
         mouseOver: false,
       });
