@@ -144,14 +144,19 @@ $message-border-color: #bec3c7;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  &__input-wrapper {
-    flex-wrap: wrap;
-  }
-  &__input-group {
-    flex-basis: 100%;
-  }
-  &__input-group + &__input-group {
-    margin-left: 0;
-    margin-top: 20px;
+  .contact {
+    &__input-wrapper {
+      flex-wrap: wrap;
+    }
+    &__input-group {
+      flex-basis: 100%;
+    }
+    &__input-group + &__input-group {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    &__button {
+      width: 100%;
+    }
   }
 }
