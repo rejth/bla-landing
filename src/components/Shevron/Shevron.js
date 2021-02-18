@@ -8,7 +8,7 @@ const Shevron = () => {
   };
 
   document.addEventListener('click', e => {
-    e.preventDefault();
+    // e.preventDefault();
     if (e.target.closest('.up')) {
       toggleUpScroll();
     }
