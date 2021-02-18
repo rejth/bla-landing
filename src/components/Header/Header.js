@@ -55,8 +55,8 @@ const Header = () => {
   );
 };
 
-const NavbarLink = ({ target, text }) => (
-  <li className="navbar__item">
+const NavbarLink = ({ target, text, onClick }) => (
+  <li className="navbar__item" onClick={onClick}>
     <a href={`#${target}`} className="navbar__link">
       {text}
     </a>
@@ -66,6 +66,7 @@ const NavbarLink = ({ target, text }) => (
 NavbarLink.propTypes = {
   target: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  onClick: PropTypes.string.isRequired,
 };
 
 export default Header;
