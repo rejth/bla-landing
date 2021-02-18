@@ -56,7 +56,7 @@ const UserCard = ({ image, name, profession, description }) => (
           <i className="fa fa-twitter"></i>
         </a>
         <a href="https://www.google.ru/" className="social-links__item google">
-          <i className="fa fa-google-plus-g"></i>
+          <i className="fa fa-google"></i>
         </a>
         <a
           href="https://www.instagram.com/"

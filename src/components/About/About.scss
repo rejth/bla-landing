@@ -103,13 +103,8 @@ $primary-font-color: #444444;
 
 .social-links {
   &__item {
-    font-family: 'Font Awesome';
     font-size: 29px;
     font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
-    text-align: center;
     text-decoration: none;
     color: #ffffff;
   }
@@ -117,22 +112,18 @@ $primary-font-color: #444444;
 
 .fb {
   width: 14px;
-  height: 27px;
 }
 
 .twitter {
   width: 26px;
-  height: 21px;
 }
 
 .google {
   width: 28px;
-  height: 28px;
 }
 
 .globus {
   width: 26px;
-  height: 25px;
 }
 
 @media (max-width: 880px) {
