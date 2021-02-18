@@ -50,7 +50,7 @@ const UserCard = ({ image, name, profession, description }) => (
     >
       <div className="about__social-links social-links">
         <a href="https://www.facebook.com/" className="social-links__item">
-          <i className="fab fa-facebook-f"></i>
+          <i className="fa fa-exclamation"></i>
         </a>
         <a href="https://twitter.com/" className="social-links__item">
           <i className="fab fa-twitter"></i>
