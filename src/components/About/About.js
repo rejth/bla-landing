@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './About.scss';
 
@@ -42,37 +42,78 @@ const About = () => (
   </section>
 );
 
-const UserCard = ({ image, name, profession, description }) => (
-  <div className="about__card card">
-    <div
-      style={{ backgroundImage: `url(img/about/${image})` }}
-      className="about__image"
-    >
-      <div className="about__social-links social-links">
-        <a href="https://www.facebook.com/" className="social-links__item fb">
-          <i className="fa fa-facebook-f"></i>
-        </a>
-        <a href="https://twitter.com/" className="social-links__item twitter">
-          <i className="fa fa-twitter"></i>
-        </a>
-        <a href="https://www.google.ru/" className="social-links__item google">
-          <i className="fa fa-google"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/"
-          className="social-links__item globus"
+class UserCard extends Component {
+  state = {
+    display: 'none',
+  };
+
+  mouseEnter = e => {
+    e.preventDefault();
+    if (this.state.display === 'none') {
+      this.setState({
+        display: 'block',
+      });
+    }
+  };
+
+  mouseLeave = e => {
+    e.preventDefault();
+    if (this.state.display === 'block') {
+      this.setState({
+        display: 'none',
+      });
+    }
+  };
+
+  render() {
+    const { image, name, profession, description } = this.props;
+    return (
+      <div className="about__card card">
+        <div
+          className="about__image"
+          style={{ backgroundImage: `url(img/about/${image})` }}
+          onMouseEnter={this.mouseEnter}
+          onMouseLeave={this.mouseLeave}
         >
-          <i className="fa fa-globe"></i>
-        </a>
+          <div
+            className="about__social-links social-links"
+            style={{ display: this.state.display }}
+          >
+            <a
+              href="https://www.facebook.com/"
+              className="social-links__item fb"
+            >
+              <i className="fa fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              className="social-links__item twitter"
+            >
+              <i className="fa fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.google.ru/"
+              className="social-links__item google"
+            >
+              <i className="fa fa-google"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              className="social-links__item globus"
+            >
+              <i className="fa fa-globe"></i>
+            </a>
+          </div>
+        </div>
+        <div className="about__info">
+          <span className="about__user">{name}</span>
+          <span className="about__profession">{profession}</span>
+          <p className="about__description">{description}</p>
+        </div>
       </div>
-    </div>
-    <div className="about__info">
-      <span className="about__user">{name}</span>
-      <span className="about__profession">{profession}</span>
-      <p className="about__description">{description}</p>
-    </div>
-  </div>
-);
+    );
+  }
+}
 
 UserCard.propTypes = {
   image: PropTypes.string.isRequired,
