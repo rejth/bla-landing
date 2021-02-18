@@ -9,7 +9,7 @@ const Contact = () => (
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
       </p>
       <div className="contact__content">
-        <form className="contact__form" action="send.php" method="POST">
+        <form className="contact__form">
           <div className="contact__input-wrapper">
             <div className="contact__input-group">
               <input
