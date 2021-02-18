@@ -13,7 +13,9 @@ const Header = () => {
     window.scrollBy({ top: offsetPosition, behavior: 'smooth' });
   };
 
-  document.body.addEventListener('click', e => {
+  const header = document.querySelector('.navbar');
+
+  header.addEventListener('click', e => {
     if (e.target.matches('.navbar__link')) {
       e.preventDefault();
       toggleHeaderScroll(e.target);
