@@ -1,3 +1,3 @@
 # Bla Bla Landing with React
 
-Landing Page на React
+Simple landing page built on React
